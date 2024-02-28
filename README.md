@@ -21,7 +21,13 @@ Use the following command to compile the Verilog testbench:
 
 ```bash
 iverilog -Wall -o homework8_b_tb.vvp homework8_b_tb.v
+```
+
+### Simulation
+
+```bash
 vvp homework8_b_tb.vvp
+```
 
 
 ## Contributors
