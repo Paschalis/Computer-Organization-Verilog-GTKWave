@@ -1,0 +1,85 @@
+$date
+	Sun Jan 10 23:22:45 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module homework7_tb $end
+$var wire 1 ! out $end
+$var reg 1 " Clock $end
+$var reg 1 # in $end
+$var integer 32 $ i [31:0] $end
+$scope module DUT $end
+$var wire 1 " Clock $end
+$var wire 1 # in $end
+$var wire 1 ! out $end
+$var wire 1 % XOR $end
+$scope module U0 $end
+$var wire 1 # A $end
+$var wire 1 % XOR $end
+$var wire 1 ! B $end
+$upscope $end
+$scope module U1 $end
+$var wire 1 " Clock $end
+$var wire 1 % D $end
+$var reg 1 ! Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1%
+b0 $
+1#
+0"
+0!
+$end
+#10
+0%
+1!
+b1 $
+1"
+#20
+b10 $
+0"
+#30
+1%
+0!
+b11 $
+1"
+#40
+b100 $
+0"
+#50
+0%
+1!
+b101 $
+1"
+#60
+b110 $
+0"
+#70
+1%
+0!
+b111 $
+1"
+#80
+b1000 $
+0"
+#90
+0%
+1!
+b1001 $
+1"
+#100
+b1010 $
+0"
+#110
+1%
+0!
+b1011 $
+1"

@@ -1,0 +1,116 @@
+#! /usr/bin/vvp
+:ivl_version "10.2 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x55d77a97e150 .scope module, "homework7_tb" "homework7_tb" 2 4;
+ .timescale -9 -12;
+v0x55d77a9e0860_0 .var "A", 0 0;
+v0x55d77a9e0920_0 .var "B", 0 0;
+v0x55d77a9e09f0_0 .var "C", 0 0;
+v0x55d77a9e0af0_0 .var "D", 0 0;
+v0x55d77a9e0bc0_0 .net "Y", 0 0, L_0x55d77a9e1750;  1 drivers
+v0x55d77a9e0c60_0 .var "sel", 1 0;
+S_0x55d77a97e2d0 .scope module, "DUT" "homework7" 2 12, 3 4 0, S_0x55d77a97e150;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "Y"
+    .port_info 1 /INPUT 1 "A"
+    .port_info 2 /INPUT 1 "B"
+    .port_info 3 /INPUT 1 "C"
+    .port_info 4 /INPUT 1 "D"
+    .port_info 5 /INPUT 2 "sel"
+v0x55d77a9b7260_0 .net "A", 0 0, v0x55d77a9e0860_0;  1 drivers
+v0x55d77a9df900_0 .net "B", 0 0, v0x55d77a9e0920_0;  1 drivers
+v0x55d77a9df9c0_0 .net "C", 0 0, v0x55d77a9e09f0_0;  1 drivers
+v0x55d77a9dfa60_0 .net "D", 0 0, v0x55d77a9e0af0_0;  1 drivers
+v0x55d77a9dfb20_0 .net "Y", 0 0, L_0x55d77a9e1750;  alias, 1 drivers
+L_0x7f98c06d5018 .functor BUFT 1, C4<00>, C4<0>, C4<0>, C4<0>;
+v0x55d77a9dfc30_0 .net/2u *"_s0", 1 0, L_0x7f98c06d5018;  1 drivers
+v0x55d77a9dfd10_0 .net *"_s10", 0 0, L_0x55d77a9e0ff0;  1 drivers
+L_0x7f98c06d50f0 .functor BUFT 1, C4<11>, C4<0>, C4<0>, C4<0>;
+v0x55d77a9dfdd0_0 .net/2u *"_s12", 1 0, L_0x7f98c06d50f0;  1 drivers
+v0x55d77a9dfeb0_0 .net *"_s14", 0 0, L_0x55d77a9e10c0;  1 drivers
+L_0x7f98c06d5138 .functor BUFT 1, C4<x>, C4<0>, C4<0>, C4<0>;
+v0x55d77a9e0000_0 .net *"_s16", 0 0, L_0x7f98c06d5138;  1 drivers
+v0x55d77a9e00e0_0 .net *"_s18", 0 0, L_0x55d77a9e1260;  1 drivers
+v0x55d77a9e01c0_0 .net *"_s2", 0 0, L_0x55d77a9e0d60;  1 drivers
+v0x55d77a9e0280_0 .net *"_s20", 0 0, L_0x55d77a9e13f0;  1 drivers
+v0x55d77a9e0360_0 .net *"_s22", 0 0, L_0x55d77a9e15c0;  1 drivers
+L_0x7f98c06d5060 .functor BUFT 1, C4<10>, C4<0>, C4<0>, C4<0>;
+v0x55d77a9e0440_0 .net/2u *"_s4", 1 0, L_0x7f98c06d5060;  1 drivers
+v0x55d77a9e0520_0 .net *"_s6", 0 0, L_0x55d77a9e0ed0;  1 drivers
+L_0x7f98c06d50a8 .functor BUFT 1, C4<01>, C4<0>, C4<0>, C4<0>;
+v0x55d77a9e05e0_0 .net/2u *"_s8", 1 0, L_0x7f98c06d50a8;  1 drivers
+v0x55d77a9e06c0_0 .net "sel", 1 0, v0x55d77a9e0c60_0;  1 drivers
+L_0x55d77a9e0d60 .cmp/eq 2, v0x55d77a9e0c60_0, L_0x7f98c06d5018;
+L_0x55d77a9e0ed0 .cmp/eq 2, v0x55d77a9e0c60_0, L_0x7f98c06d5060;
+L_0x55d77a9e0ff0 .cmp/eq 2, v0x55d77a9e0c60_0, L_0x7f98c06d50a8;
+L_0x55d77a9e10c0 .cmp/eq 2, v0x55d77a9e0c60_0, L_0x7f98c06d50f0;
+L_0x55d77a9e1260 .functor MUXZ 1, L_0x7f98c06d5138, v0x55d77a9e0af0_0, L_0x55d77a9e10c0, C4<>;
+L_0x55d77a9e13f0 .functor MUXZ 1, L_0x55d77a9e1260, v0x55d77a9e09f0_0, L_0x55d77a9e0ff0, C4<>;
+L_0x55d77a9e15c0 .functor MUXZ 1, L_0x55d77a9e13f0, v0x55d77a9e0920_0, L_0x55d77a9e0ed0, C4<>;
+L_0x55d77a9e1750 .functor MUXZ 1, L_0x55d77a9e15c0, v0x55d77a9e0860_0, L_0x55d77a9e0d60, C4<>;
+    .scope S_0x55d77a97e150;
+T_0 ;
+    %vpi_call 2 22 "$dumpfile", "homework7_tb.vcd" {0 0 0};
+    %vpi_call 2 23 "$dumpvars" {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d77a9e0860_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d77a9e0920_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d77a9e09f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d77a9e0af0_0, 0, 1;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0x55d77a9e0c60_0, 0, 2;
+    %delay 100, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d77a9e0860_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d77a9e0920_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d77a9e09f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d77a9e0af0_0, 0, 1;
+    %pushi/vec4 2, 0, 2;
+    %store/vec4 v0x55d77a9e0c60_0, 0, 2;
+    %delay 100, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d77a9e0860_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d77a9e0920_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d77a9e09f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d77a9e0af0_0, 0, 1;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v0x55d77a9e0c60_0, 0, 2;
+    %delay 100, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d77a9e0860_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d77a9e0920_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d77a9e09f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d77a9e0af0_0, 0, 1;
+    %pushi/vec4 3, 0, 2;
+    %store/vec4 v0x55d77a9e0c60_0, 0, 2;
+    %delay 100, 0;
+    %end;
+    .thread T_0;
+    .scope S_0x55d77a97e150;
+T_1 ;
+    %vpi_call 2 32 "$monitor", "SELECT=%d,A=%d,B=%d,C=%d,D=%d,Y=%d \012", v0x55d77a9e0c60_0, v0x55d77a9e0860_0, v0x55d77a9e0920_0, v0x55d77a9e09f0_0, v0x55d77a9e0af0_0, v0x55d77a9e0bc0_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "homework7_tb.v";
+    "homework7.v";

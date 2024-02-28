@@ -1,0 +1,166 @@
+$date
+	Tue Dec  1 19:35:49 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module homework_b_tb $end
+$var wire 1 ! O $end
+$var reg 1 " D0 $end
+$var reg 1 # D1 $end
+$var reg 1 $ D2 $end
+$var reg 1 % D3 $end
+$var reg 1 & D4 $end
+$var reg 1 ' D5 $end
+$var reg 1 ( D6 $end
+$var reg 1 ) D7 $end
+$var reg 1 * S0 $end
+$var reg 1 + S1 $end
+$var reg 1 , S2 $end
+$scope module DUT $end
+$var wire 1 " D0 $end
+$var wire 1 # D1 $end
+$var wire 1 $ D2 $end
+$var wire 1 % D3 $end
+$var wire 1 & D4 $end
+$var wire 1 ' D5 $end
+$var wire 1 ( D6 $end
+$var wire 1 ) D7 $end
+$var wire 1 * S0 $end
+$var wire 1 + S1 $end
+$var wire 1 , S2 $end
+$var wire 1 ! O $end
+$var wire 1 - NOTSO $end
+$var wire 1 . NOTS2 $end
+$var wire 1 / NOTS1 $end
+$var wire 1 0 AND7 $end
+$var wire 1 1 AND6 $end
+$var wire 1 2 AND5 $end
+$var wire 1 3 AND4 $end
+$var wire 1 4 AND3 $end
+$var wire 1 5 AND2 $end
+$var wire 1 6 AND1 $end
+$var wire 1 7 AND0 $end
+$scope module U0 $end
+$var wire 1 * A $end
+$var wire 1 - F1 $end
+$upscope $end
+$scope module U1 $end
+$var wire 1 + A $end
+$var wire 1 / F1 $end
+$upscope $end
+$scope module U10 $end
+$var wire 1 * A $end
+$var wire 1 + B $end
+$var wire 1 , C $end
+$var wire 1 ) D $end
+$var wire 1 0 F1 $end
+$upscope $end
+$scope module U11 $end
+$var wire 1 ! F1 $end
+$var wire 1 0 H $end
+$var wire 1 1 G $end
+$var wire 1 2 F $end
+$var wire 1 3 E $end
+$var wire 1 4 D $end
+$var wire 1 5 C $end
+$var wire 1 6 B $end
+$var wire 1 7 A $end
+$upscope $end
+$scope module U2 $end
+$var wire 1 , A $end
+$var wire 1 . F1 $end
+$upscope $end
+$scope module U3 $end
+$var wire 1 - A $end
+$var wire 1 / B $end
+$var wire 1 . C $end
+$var wire 1 " D $end
+$var wire 1 7 F1 $end
+$upscope $end
+$scope module U4 $end
+$var wire 1 * A $end
+$var wire 1 / B $end
+$var wire 1 . C $end
+$var wire 1 # D $end
+$var wire 1 6 F1 $end
+$upscope $end
+$scope module U5 $end
+$var wire 1 - A $end
+$var wire 1 + B $end
+$var wire 1 . C $end
+$var wire 1 $ D $end
+$var wire 1 5 F1 $end
+$upscope $end
+$scope module U6 $end
+$var wire 1 * A $end
+$var wire 1 + B $end
+$var wire 1 . C $end
+$var wire 1 % D $end
+$var wire 1 4 F1 $end
+$upscope $end
+$scope module U7 $end
+$var wire 1 - A $end
+$var wire 1 / B $end
+$var wire 1 , C $end
+$var wire 1 & D $end
+$var wire 1 3 F1 $end
+$upscope $end
+$scope module U8 $end
+$var wire 1 * A $end
+$var wire 1 / B $end
+$var wire 1 , C $end
+$var wire 1 ' D $end
+$var wire 1 2 F1 $end
+$upscope $end
+$scope module U9 $end
+$var wire 1 - A $end
+$var wire 1 + B $end
+$var wire 1 , C $end
+$var wire 1 ( D $end
+$var wire 1 1 F1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+07
+06
+05
+04
+03
+02
+01
+00
+1/
+1.
+1-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#10
+1!
+17
+1)
+1(
+1'
+1&
+1%
+1$
+1#
+1"
+#20

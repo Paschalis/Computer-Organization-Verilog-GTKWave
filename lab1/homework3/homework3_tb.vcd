@@ -1,0 +1,86 @@
+$date
+	Sun Nov 29 14:28:13 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module homework3_tb $end
+$var wire 1 ! z $end
+$var reg 2 " x [1:0] $end
+$var reg 2 # y [1:0] $end
+$scope module DUT $end
+$var wire 2 $ x [1:0] $end
+$var wire 2 % y [1:0] $end
+$var wire 1 ! z $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 %
+b0 $
+b0 #
+b0 "
+1!
+$end
+#100
+0!
+b1 #
+b1 %
+#200
+b10 #
+b10 %
+#300
+b11 #
+b11 %
+#400
+b0 #
+b0 %
+b1 "
+b1 $
+#500
+1!
+b1 #
+b1 %
+#600
+0!
+b10 #
+b10 %
+#700
+b11 #
+b11 %
+#800
+b0 #
+b0 %
+b10 "
+b10 $
+#900
+b1 #
+b1 %
+#1000
+1!
+b10 #
+b10 %
+#1100
+0!
+b11 #
+b11 %
+#1200
+b0 #
+b0 %
+b11 "
+b11 $
+#1300
+b1 #
+b1 %
+#1400
+b10 #
+b10 %
+#1500
+1!
+b11 #
+b11 %
+#1600

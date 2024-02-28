@@ -1,0 +1,50 @@
+$date
+	Tue Dec  1 21:13:01 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module BCD_tb $end
+$var wire 4 ! ones [3:0] $end
+$var reg 4 " binary [3:0] $end
+$scope module DUT $end
+$var wire 4 # binary [3:0] $end
+$var reg 4 $ ones [3:0] $end
+$var reg 4 % tens [3:0] $end
+$var integer 32 & i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11111111111111111111111111111111 &
+b1 %
+b11 $
+b1101 #
+b1101 "
+b11 !
+$end
+#10000
+b11111111111111111111111111111111 &
+b1000 !
+b1000 $
+b0 %
+b1000 "
+b1000 #
+#20000
+b11111111111111111111111111111111 &
+b1001 !
+b1001 $
+b1001 "
+b1001 #
+#30000
+b1 %
+b11111111111111111111111111111111 &
+b0 !
+b0 $
+b1010 "
+b1010 #
+#40000

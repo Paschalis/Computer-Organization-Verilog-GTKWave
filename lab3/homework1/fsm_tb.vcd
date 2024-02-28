@@ -1,0 +1,55 @@
+$date
+	Sat Jan 16 22:19:17 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module fsm_tb $end
+$var wire 1 ! out $end
+$var reg 1 " clk $end
+$var reg 1 # in $end
+$var reg 1 $ reset $end
+$scope module DUT $end
+$var wire 1 " clk $end
+$var wire 1 # in $end
+$var wire 1 $ reset $end
+$var reg 1 ! out $end
+$var reg 1 % state $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0%
+0$
+1#
+0"
+1!
+$end
+#100
+1$
+#200
+1"
+#300
+0"
+#400
+1%
+0#
+1"
+#500
+0"
+#600
+0!
+1#
+1"
+#700
+0"
+#800
+0%
+0#
+1"
+#900
+0"

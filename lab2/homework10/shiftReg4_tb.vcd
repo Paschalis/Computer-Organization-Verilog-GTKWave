@@ -1,0 +1,75 @@
+$date
+	Tue Jan 12 22:21:57 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module shiftReg4_tb $end
+$var wire 4 ! D03 [3:0] $end
+$var wire 4 " D02 [3:0] $end
+$var wire 4 # D01 [3:0] $end
+$var wire 4 $ D00 [3:0] $end
+$var reg 1 % clock $end
+$var reg 4 & din [3:0] $end
+$var reg 1 ' reset $end
+$scope module DUT $end
+$var wire 1 % clock $end
+$var wire 4 ( din [3:0] $end
+$var wire 1 ' reset $end
+$var reg 4 ) D00 [3:0] $end
+$var reg 4 * D01 [3:0] $end
+$var reg 4 + D02 [3:0] $end
+$var reg 4 , D03 [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx ,
+bx +
+bx *
+bx )
+b1011 (
+1'
+b1011 &
+0%
+bx $
+bx #
+bx "
+bx !
+$end
+#100
+b1011 $
+b1011 )
+1%
+#200
+0%
+#300
+b0 !
+b0 ,
+b0 "
+b0 +
+b0 #
+b0 *
+b0 $
+b0 )
+0'
+1%
+#400
+0%
+#500
+b1011 $
+b1011 )
+1'
+1%
+#600
+0%
+#700
+b1011 #
+b1011 *
+1%
+#1700
+0%

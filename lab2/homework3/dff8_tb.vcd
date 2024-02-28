@@ -1,0 +1,77 @@
+$date
+	Tue Jan 12 20:55:31 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module dff8_tb $end
+$var wire 8 ! q [7:0] $end
+$var reg 1 " clock $end
+$var reg 8 # d [7:0] $end
+$var reg 1 $ reset $end
+$var integer 32 % i [31:0] $end
+$scope module DUT $end
+$var wire 1 " clock $end
+$var wire 8 & d [7:0] $end
+$var wire 1 $ reset $end
+$var reg 8 ' q [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx '
+bx &
+b0 %
+0$
+bx #
+0"
+bx !
+$end
+#8000
+b11110011 #
+b11110011 &
+#10000
+b0 !
+b0 '
+b1 %
+1"
+#18000
+b10000011 #
+b10000011 &
+1$
+#20000
+b10 %
+0"
+#30000
+b10000011 !
+b10000011 '
+b11 %
+1"
+#40000
+b100 %
+0"
+#50000
+b101 %
+1"
+#60000
+b110 %
+0"
+#70000
+b111 %
+1"
+#80000
+b1000 %
+0"
+#90000
+b1001 %
+1"
+#100000
+b1010 %
+0"
+#110000
+b1011 %
+1"

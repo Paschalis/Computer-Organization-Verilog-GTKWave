@@ -1,0 +1,49 @@
+$date
+	Tue Dec  1 22:24:16 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module homework7_tb $end
+$var wire 1 ! Y $end
+$var reg 1 " A $end
+$var reg 1 # B $end
+$var reg 1 $ C $end
+$var reg 1 % D $end
+$var reg 2 & sel [1:0] $end
+$scope module DUT $end
+$var wire 1 " A $end
+$var wire 1 # B $end
+$var wire 1 $ C $end
+$var wire 1 % D $end
+$var wire 2 ' sel [1:0] $end
+$var wire 1 ! Y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 '
+b0 &
+0%
+1$
+0#
+1"
+1!
+$end
+#100
+0!
+b10 &
+b10 '
+#200
+1!
+b1 &
+b1 '
+#300
+0!
+b11 &
+b11 '
+#400
