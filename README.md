@@ -37,4 +37,4 @@ vvp homework8_b_tb.vvp
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GNU General Public License Version 3 (GPLv3)](LICENSE).
